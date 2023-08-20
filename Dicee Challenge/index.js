@@ -11,5 +11,15 @@ var randomDiceImage2="images/dice"+randomNumber2+".png";
 
 var image2=document.querySelectorAll("img")[1];
 image2.setAttribute("src",randomDiceImage2);
+if (randomNumber1 > randomNumber2){
+  document.querySelector("h1").innerText="🚩player 1 wins";
+}
+else if(randomNumber1<randomNumber2){
+  document.querySelector("h1").innerHTML="🚩player 2 wins";
+
+}
+else{
+  document.querySelector("h1").innerHTML="😊Match Draw";
+}
 
 
